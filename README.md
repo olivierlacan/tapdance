@@ -88,7 +88,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 5. Create a new Pull Request
 
 [activesupport-try]: http://api.rubyonrails.org/classes/Object.html#method-i-try
-[rubygems-image]: https://badge.fury.io/rb/tapdance.svg
+[rubygems-image]: https://img.shields.io/gem/v/tapdance.svg
 [rubygems]: https://rubygems.org/gems/tapdance
 [gemnasium-image]: https://img.shields.io/gemnasium/olivierlacan/tapdance.svg
 [gemnasium]: https://gemnasium/olivierlacan/tapdance
