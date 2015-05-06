@@ -76,6 +76,7 @@ NoMethodError: undefined method `height=' for nil:NilClass
 You can now write this instead:
 
 ```ruby
+require "tapdance"
 jedi = nil
 jedi.tap do |yoda|
   yoda.height = 1
