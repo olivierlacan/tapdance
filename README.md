@@ -68,7 +68,7 @@ To avoid this:
 ```ruby
 jedi = nil
 jedi.tap do |yoda|
-  yoda.try(:height, 1)
+  yoda.height = 1
 end
 NoMethodError: undefined method `height=' for nil:NilClass
 ```
