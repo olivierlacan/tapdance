@@ -1,4 +1,4 @@
-# Tapdance
+# Tapdance [![Gem Version][rubygems-image]][rubygems] [![Dependencies][gemnasium-image]][gemnasium] [![Code Climate][codeclimate-image]][codeclimate] [![License][license-image]][license]
 
 Tapdance makes `Object#tap` dance with `nil`.
 
@@ -88,3 +88,11 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 5. Create a new Pull Request
 
 [activesupport-try]: http://api.rubyonrails.org/classes/Object.html#method-i-try
+[rubygems-image]: https://badge.fury.io/rb/tapdance.svg
+[rubygems]: https://rubygems.org/gems/tapdance
+[gemnasium-image]: https://img.shields.io/gemnasium/olivierlacan/tapdance.svg
+[gemnasium]: https://gemnasium/olivierlacan/tapdance
+[codeclimate-image]: https://codeclimate.com/github/olivierlacan/tapdance/badges/gpa.svg
+[codeclimate]: https://codeclimate.com/github/olivierlacan/tapdance
+[license-image]: https://img.shields.io/github/license/olivierlacan/tapdance.svg
+[license]: https://github.com/olivierlacan/tapdance/blob/master/LICENSE.txt
