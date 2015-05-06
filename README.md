@@ -94,5 +94,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 [gemnasium]: https://gemnasium/olivierlacan/tapdance
 [codeclimate-image]: https://codeclimate.com/github/olivierlacan/tapdance/badges/gpa.svg
 [codeclimate]: https://codeclimate.com/github/olivierlacan/tapdance
-[license-image]: https://img.shields.io/github/license/olivierlacan/tapdance.svg
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: https://github.com/olivierlacan/tapdance/blob/master/LICENSE.txt
