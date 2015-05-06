@@ -8,6 +8,15 @@ I mean it totally dances around `nil` and doesn't execute a block argument
 passed to `nil#tap` so that you don't have to check for `nil` inside of the
 block passed to `tap`.
 
+It looks like this:
+
+```ruby
+nil.tap do |yoda|
+  yoda.dance!
+end
+=> nil
+```
+
 ## Is this a good idea?
 
 Nope.
@@ -71,7 +80,11 @@ jedi = nil
 jedi.tap do |yoda|
   yoda.height = 1
 end
+=> nil
 ```
+
+Yep, there's no `height` method on `yoda`. Probably because `yoda` is `nil` and
+it would be weird if nothingness had a height, wouldn't it?
 
 ## Development
 
