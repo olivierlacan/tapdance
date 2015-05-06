@@ -8,6 +8,10 @@ I mean it totally dances around `nil` and doesn't execute a block argument
 passed to `nil#tap` so that you don't have to check for `nil` inside of the
 block passed to `tap`.
 
+## Is this a good idea?
+
+Nope.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -33,18 +37,18 @@ $ gem install tapdance
 Instead of writing this Ruby:
 
 ```ruby
-Jedi = nil
-Jedi.tap do |yoda|
+jedi = nil
+jedi.tap do |yoda|
   yoda && yoda.height = 1
 end
 => nil
 ```
 
-Or this Ruby on Rails (ActiveSupport):
+Or this Ruby on Rails ([ActiveSupport][activesupport-try]):
 
 ```ruby
-Jedi = nil
-Jedi.tap do |yoda|
+jedi = nil
+jedi.tap do |yoda|
   yoda.try(:height, 1)
 end
 => nil
@@ -53,8 +57,8 @@ end
 To avoid this:
 
 ```ruby
-Jedi = nil
-Jedi.tap do |yoda|
+jedi = nil
+jedi.tap do |yoda|
   yoda.try(:height, 1)
 end
 NoMethodError: undefined method `height=' for nil:NilClass
@@ -63,8 +67,8 @@ NoMethodError: undefined method `height=' for nil:NilClass
 You can now write this instead:
 
 ```ruby
-Jedi = nil
-Jedi.tap do |yoda|
+jedi = nil
+jedi.tap do |yoda|
   yoda.height = 1
 end
 ```
@@ -82,3 +86,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+[activesupport-try]: http://api.rubyonrails.org/classes/Object.html#method-i-try
